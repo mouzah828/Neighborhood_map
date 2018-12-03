@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mouzah Neighborhood map project</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  </head>
+  <body>
+  <nav class="navbar navbar-default nav-bar col-sm-3 col-md-3">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <h2 class="main-title">Airports in UAE</h2>
+      </div>
+
+      <!-- filteredInput text for user to filter Airport location list -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <input type="search" id="search-input" placeholder="Filter UAE Airports location" data-bind="textInput: filteredInput">
+        </div>
+        <ul class="places-list" data-bind="foreach: myLocations">
+          <p class="places" data-bind="text: title, click: $parent.showLocation,  visible: show"></p>
+        </ul>
+
+      </div><!-- container-fluid div -->
+  </nav>
+
+      <!-- Google Maps section -->
+  <div id="map" class="map"></div>
+
+  <!-- required js files to run this project -->
+  <script async defer src="http://maps.googleapis.com/maps/api/js?libraries=places,geometry,drawing&key=AIzaSyCZkm-OE7jEpJbb_AB4DAXT6BpzfTyFPFA&v=3&callback=initMap" onerror="mapError()"></script>
+  <script src='js/knockout-min.js'></script>
+  <script src='js/jquery.min.js'></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script  src="js/map_js.js"></script>
+
+  </body>
+</html>
+

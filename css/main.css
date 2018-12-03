@@ -1,0 +1,119 @@
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Avant Garde", sans-serif;
+}
+
+/* Always set the map height explicitly to define the size of the div
+* element that contains the map. */
+#map {
+  height: 100%;
+  background-color: #222;
+  color: #fff;
+}
+
+.nav-bar {
+  background-color: #ecf0f1;
+}
+
+.main-title {
+  margin-left: 40px;
+  line-height: 40px;
+}
+
+#search-input {
+  margin: 10px 0px 20px 20px;
+  padding: 10px 80px 5px 10px;
+}
+
+.places {
+  margin: 10px 0px;
+  font-weight: bold;
+}
+
+.places:hover {
+  background-color: #42a5f5;
+}
+
+#sf {
+  margin-left: 5px;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+#hk {
+  margin-left: 35px;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.title {
+  color: black;
+}
+
+.name,
+.category,
+.address,
+.information {
+  font-family: "Helvetica-neue", sans-serif;
+  color: #000;
+  font-weight: bold;
+}
+.information_txt {
+  color:#00C;
+  font-weight:300;
+}
+.container-fluid{
+	height:100%;
+	background-color:#F0E7D9;
+	padding-left:0;
+	margin-left:0;
+	}
+/* MEDIA QUERY FOR MOBILE */
+@media screen and (max-width: 480px) {
+  .navbar {
+    margin-bottom: 0px;
+  }
+
+  .main-title {
+    margin-top: 25px;
+    margin-left: 0px;
+    line-height: 0px;
+  }
+
+  #search-input {
+    margin: 10px 20px 0px 0px;
+    padding: 10px 80px 5px 10px;
+  }
+
+  #hk {
+    margin-left: 0px;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+  }
+
+  .buttons {
+    margin-top: 15px;
+  }
+.Search-box{
+	margin-right:0;
+	margin-left:0  
+	}
+}
+
+/* MEDIA QUERY FOR TABLET */
+@media (min-width: 480px) and (max-width: 768px) {
+  #map {
+    height: 100%;
+    background-color: #222;
+    color: #fff;
+  }
+  .nav-bar {
+    background-color: #ecf0f1;
+    width: 50%;
+  }
+  navbar-collapse{width:auto;border-top:0;-webkit-box-shadow:none;box-shadow:none}
+}
